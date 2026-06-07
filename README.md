@@ -10,6 +10,12 @@ A personal collection of curated agent skills for **Codex** and **Claude Code**.
 | [obra/superpowers](https://github.com/obra/superpowers) | 14 skills — structured development workflows | [docs/skills/superpowers.md](docs/skills/superpowers.md) |
 | [larksuite/cli](https://github.com/larksuite/cli) | 26 skills — full Feishu API surface (submodule) | [docs/skills/lark.md](docs/skills/lark.md) |
 
+## Included Tools
+
+| Tool | Description |
+|---|---|
+| [gastownhall/beads](https://github.com/gastownhall/beads) | Durable issue tracker for agents — the task system this repo itself uses (submodule) |
+
 ## How to Install
 
 ### Quick install (recommended)
@@ -55,8 +61,9 @@ Restart your agent after installing to pick up new skills.
 # Pull all upstream changes into skills/
 ./scripts/sync.sh --pull
 
-# Lark submodule
+# Submodules
 git submodule update --remote vendors/larksuite-cli
+git submodule update --remote vendors/beads
 ```
 
 The sync script compares pinned commits in [sources.yaml](sources.yaml) against upstream HEAD.
@@ -73,4 +80,5 @@ SkillVault/
     sync.sh              # Check & pull upstream updates
   vendors/
     larksuite-cli/       # Git submodule → larksuite/cli
+    beads/               # Git submodule → gastownhall/beads
 ```

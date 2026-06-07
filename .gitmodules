@@ -3,3 +3,9 @@
 	url = https://github.com/larksuite/cli.git
 	shallow = true
 
+
+[submodule "vendors/beads"]
+	path = vendors/beads
+	url = https://github.com/gastownhall/beads.git
+	shallow = true
+
