@@ -23,7 +23,7 @@ A personal collection of curated agent skills for **Codex** and **Claude Code**.
 Use the bundled install script — works for both Codex and Claude Code:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- diagnose tdd brainstorming
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/master/scripts/install.sh | bash -s -- diagnose tdd brainstorming
 ```
 
 The script auto-detects your agent and places skills in the right directory.
@@ -31,8 +31,8 @@ The script auto-detects your agent and places skills in the right directory.
 Force a specific agent:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- --codex diagnose
-curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- --claude diagnose
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/master/scripts/install.sh | bash -s -- --codex diagnose
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/master/scripts/install.sh | bash -s -- --claude diagnose
 ```
 
 ### Ask your agent
