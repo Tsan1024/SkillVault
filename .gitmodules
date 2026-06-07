@@ -1,0 +1,5 @@
+[submodule "vendors/larksuite-cli"]
+	path = vendors/larksuite-cli
+	url = https://github.com/larksuite/cli.git
+	shallow = true
+

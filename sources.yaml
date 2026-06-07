@@ -1,0 +1,57 @@
+# SkillVault source index
+# Maps each skill to its upstream repo, path, and sync state.
+# Run scripts/sync.sh to check for upstream updates.
+
+sources:
+  mattpocock/skills:
+    repo: https://github.com/mattpocock/skills
+    commit: be55a7970319ede7965edbb02b5e41cba1ca82c9
+    synced: 2026-06-07
+    skills:
+      - { name: caveman,              path: skills/productivity/caveman }
+      - { name: diagnose,              path: skills/engineering/diagnose }
+      - { name: edit-article,          path: skills/personal/edit-article }
+      - { name: git-guardrails-claude-code, path: skills/misc/git-guardrails-claude-code }
+      - { name: grill-me,              path: skills/productivity/grill-me }
+      - { name: grill-with-docs,       path: skills/engineering/grill-with-docs }
+      - { name: handoff,               path: skills/productivity/handoff }
+      - { name: improve-codebase-architecture, path: skills/engineering/improve-codebase-architecture }
+      - { name: migrate-to-shoehorn,   path: skills/misc/migrate-to-shoehorn }
+      - { name: obsidian-vault,        path: skills/personal/obsidian-vault }
+      - { name: prototype,             path: skills/engineering/prototype }
+      - { name: scaffold-exercises,    path: skills/misc/scaffold-exercises }
+      - { name: setup-matt-pocock-skills, path: skills/engineering/setup-matt-pocock-skills }
+      - { name: setup-pre-commit,      path: skills/misc/setup-pre-commit }
+      - { name: tdd,                   path: skills/engineering/tdd }
+      - { name: to-issues,             path: skills/engineering/to-issues }
+      - { name: to-prd,                path: skills/engineering/to-prd }
+      - { name: triage,                path: skills/engineering/triage }
+      - { name: write-a-skill,         path: skills/productivity/write-a-skill }
+      - { name: zoom-out,              path: skills/engineering/zoom-out }
+
+  obra/superpowers:
+    repo: https://github.com/obra/superpowers
+    commit: 6fd4507659784c351abbd2bc264c7162cfd386dc
+    synced: 2026-06-07
+    skills:
+      - { name: brainstorming,         path: skills/brainstorming }
+      - { name: dispatching-parallel-agents, path: skills/dispatching-parallel-agents }
+      - { name: executing-plans,       path: skills/executing-plans }
+      - { name: finishing-a-development-branch, path: skills/finishing-a-development-branch }
+      - { name: receiving-code-review, path: skills/receiving-code-review }
+      - { name: requesting-code-review, path: skills/requesting-code-review }
+      - { name: subagent-driven-development, path: skills/subagent-driven-development }
+      - { name: systematic-debugging,  path: skills/systematic-debugging }
+      - { name: test-driven-development, path: skills/test-driven-development }
+      - { name: using-git-worktrees,   path: skills/using-git-worktrees }
+      - { name: using-superpowers,     path: skills/using-superpowers }
+      - { name: verification-before-completion, path: skills/verification-before-completion }
+      - { name: writing-plans,         path: skills/writing-plans }
+      - { name: writing-skills,        path: skills/writing-skills }
+
+  larksuite/cli:
+    repo: https://github.com/larksuite/cli
+    commit: 7c50b3d9e3058e2749adaf983795b37be70a27ef
+    synced: 2026-06-07
+    type: submodule
+    path: vendors/larksuite-cli
