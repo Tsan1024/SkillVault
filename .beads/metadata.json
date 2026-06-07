@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "SkillVault",
+  "project_id": "88391d21-ae99-40c0-8c7c-635d6e91b9fe"
+}
