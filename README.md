@@ -12,29 +12,30 @@ A personal collection of curated agent skills for **Codex** and **Claude Code**.
 
 ## How to Install
 
-### Codex
+### Quick install (recommended)
 
-Ask the agent:
+Use the bundled install script — works for both Codex and Claude Code:
+
+```bash
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- diagnose tdd brainstorming
+```
+
+The script auto-detects your agent and places skills in the right directory.
+
+Force a specific agent:
+
+```bash
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- --codex diagnose
+curl -sL https://raw.githubusercontent.com/Tsan1024/SkillVault/dev/scripts/install.sh | bash -s -- --claude diagnose
+```
+
+### Ask your agent
+
+Both Codex and Claude Code can install skills natively. Just say:
 
 > Install the diagnose skill from Tsan1024/SkillVault
 
-Or via script:
-
-```bash
-install-skill-from-github.py --repo Tsan1024/SkillVault --path skills/diagnose
-```
-
-### Claude Code
-
-Ask the agent:
-
-> Install the diagnose skill from Tsan1024/SkillVault into my skills
-
-Claude Code pulls the `SKILL.md` and supporting files from GitHub and places them in `~/.claude/skills/` automatically.
-
 ### Lark (Feishu) skills
-
-Install from upstream:
 
 ```bash
 install-skill-from-github.py \
@@ -67,7 +68,9 @@ SkillVault/
   skills/                # Flat skill directories (34 skills)
   docs/skills/           # Per-source skill catalogs
   sources.yaml           # Upstream source index (repo, commit, sync date)
-  scripts/sync.sh        # Check & pull upstream updates
+  scripts/
+    install.sh           # One-liner install for Codex & Claude Code
+    sync.sh              # Check & pull upstream updates
   vendors/
     larksuite-cli/       # Git submodule → larksuite/cli
 ```
