@@ -1,6 +1,6 @@
 # SkillVault
 
-A personal collection of curated agent skills for [Codex](https://github.com/openai/codex), installable via the built-in skill-installer.
+A personal collection of curated agent skills for **Codex** and **Claude Code**, installable via the built-in skill-installer or copied directly.
 
 ## Included Skills
 
@@ -12,27 +12,31 @@ A personal collection of curated agent skills for [Codex](https://github.com/ope
 
 ## How to Install
 
-**No need to clone this repo.** The Codex skill-installer pulls skills directly from GitHub.
+**No need to clone this repo.** The skill-installer pulls skills directly from GitHub.
 
-### Ask the agent (easiest)
+### Codex
 
-> Install the diagnose skill from ts/SkillVault
+Ask the agent:
 
-### Install via script
+> Install the diagnose skill from Tsan1024/SkillVault
+
+Or use the script:
 
 ```bash
-# Single skill
-install-skill-from-github.py --repo ts/SkillVault --path skills/diagnose
-
-# Multiple skills
-install-skill-from-github.py \
-  --repo ts/SkillVault \
-  --path skills/diagnose \
-  --path skills/brainstorming \
-  --path skills/tdd
+install-skill-from-github.py --repo Tsan1024/SkillVault --path skills/diagnose
 ```
 
-Lark skills come from the upstream `larksuite/cli` repo:
+### Claude Code
+
+```bash
+# Clone and copy into Claude's skills directory
+git clone --depth 1 https://github.com/Tsan1024/SkillVault.git /tmp/skillvault
+cp -r /tmp/skillvault/skills/diagnose ~/.claude/skills/
+```
+
+### Lark (Feishu) skills
+
+Install from upstream:
 
 ```bash
 install-skill-from-github.py \
@@ -41,14 +45,7 @@ install-skill-from-github.py \
   --path skills/lark-doc
 ```
 
-### Manual install
-
-```bash
-git clone --depth 1 https://github.com/ts/SkillVault.git /tmp/skillvault
-cp -r /tmp/skillvault/skills/diagnose ~/.codex/skills/
-```
-
-Restart Codex after installing to pick up new skills.
+Restart your agent after installing to pick up new skills.
 
 ## Keeping Skills Up to Date
 
