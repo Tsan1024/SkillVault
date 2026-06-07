@@ -1,6 +1,6 @@
 # SkillVault
 
-A personal collection of curated agent skills for **Codex** and **Claude Code**, installable via the built-in skill-installer.
+A personal collection of curated agent skills for **Codex** and **Claude Code**. Install directly from GitHub — no cloning required.
 
 ## Included Skills
 
@@ -12,9 +12,9 @@ A personal collection of curated agent skills for **Codex** and **Claude Code**,
 
 ## How to Install
 
-**No need to clone this repo.** Just ask your agent — both Codex and Claude Code can pull skills directly from GitHub.
-
 ### Codex
+
+Ask the agent:
 
 > Install the diagnose skill from Tsan1024/SkillVault
 
@@ -26,9 +26,11 @@ install-skill-from-github.py --repo Tsan1024/SkillVault --path skills/diagnose
 
 ### Claude Code
 
+Ask the agent:
+
 > Install the diagnose skill from Tsan1024/SkillVault into my skills
 
-Claude Code reads `SKILL.md` from `~/.claude/skills/`. The agent handles fetching from GitHub and placing it there.
+Claude Code pulls the `SKILL.md` and supporting files from GitHub and places them in `~/.claude/skills/` automatically.
 
 ### Lark (Feishu) skills
 
